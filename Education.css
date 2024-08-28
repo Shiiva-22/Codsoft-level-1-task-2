@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: #081b29;
+    color: #081b29;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    padding: 20px 10%; 
+    background: black;
+  
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 55px;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+.logo:hover{
+    color: orangered;
+}
+.logo span{
+    color: orangered;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    margin-left: 20px;
+}
+
+nav a {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+    left: 600px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav a:hover{
+    color: orangered;
+}
+
+nav a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: orangered;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+.home, .hom, .homm {
+    height: 56vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home {
+    background-color: #ffff;
+}
+
+.home-con,.hom-con,.homm-con {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+}
+
+.home-con h3,.hom-con h3 .homm-con h3{
+    text-decoration: underline;
+    margin-top: 40px;
+}
+.homm-con h3{
+    color: blue;
+}
+
+.home-con p,.hom-con p{
+    margin-left: 20px;
+    font-size: 22px;
+    font-weight: 700;
+}
+.homm-con p {
+     color:#ffff;
+}
+
+.homm-con b{
+    color: #ffff;
+}
+
+.home-con p span,.hom-con p span{
+    font-size: 18px;
+    color: #081b29;
+}
+.homm-con p span{
+    color: #fff;
+    margin-top: 5px;
+}
+
+.homm-con h4,.hom-con h4,.home-con h4 {
+    font-size: 22px;
+    color: orangered;
+}
+
+.img {
+    transition: transform 1s, opacity 1s;
+}
+
+.img img {
+    border-radius: 10px;
+    margin-top: 30px;
+    height: 160px;
+    margin-left: 100px;
+    box-shadow: 1px 1px 30px #081b29;
+    transition: transform 1s;
+}
+
+.img:hover img {
+    transform: scale(1.2);
+    z-index: 2;
+}
+
+.hom {
+    background-color: #ffff;
+}
+
+.homm {
+    background-color: #262626;
+}
+.hom img {
+    border-radius: 10px;
+    box-shadow: 1px 1px 30px #081b29;
+    transition: transform 1s;
+}
